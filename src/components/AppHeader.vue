@@ -12,7 +12,7 @@
                     {
                         title: 'COMICS',
                         url: '#',
-                        current: false
+                        current: true
                     },
                     {
                         title: 'MOVIES',
@@ -57,13 +57,13 @@
                 ]
             }
         },
-        methods : {
-            toggleActive (indice){
+        // methods : {
+        //     toggleActive (indice){
                                     
-                this.links[indice].current = true;
+        //         this.links[indice].current = true;
 
-            }
-        }
+        //     }
+        // }
     }
 </script>
 
@@ -78,7 +78,7 @@
             <nav>
     
                 <ul>
-                    <li v-for="(link, index) in links" :key="index" @click="toggleActive(index)">
+                    <li v-for="(link, index) in links" :key="index">
                         <a :class="{active: link.current}" :href="link.url">
                             {{link.title}}
                         </a>
@@ -121,9 +121,12 @@ header {
                     font-size: 12px;
                     font-weight: bold;
                     margin-right: 1rem;
-                    padding: 25px 0;
+                    padding: 25px 10px;
 
-                    
+                    &:hover {
+                        color: #0282f9;
+                        border-bottom: 4px solid #0282f9;            
+                    }    
                 }
             }
         }
