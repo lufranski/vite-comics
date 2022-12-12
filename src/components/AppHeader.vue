@@ -1,66 +1,140 @@
 <script>
     export default {
-        
+        data(){
+            return{
+                activeLink: 0,
+                links: [
+                    {
+                        title: 'CHARACTERS',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'COMICS',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'MOVIES',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'TV',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'GAMES',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'COLLECTIBLES',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'VIDEOS',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'FANS',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'NEWS',
+                        url: '#',
+                        current: false
+                    },
+                    {
+                        title: 'SHOP',
+                        url: '#',
+                        current: false
+                    }
+                ]
+            }
+        },
+        methods : {
+            toggleActive (indice){
+                                    
+                this.links[indice].current = true;
+
+            }
+        }
     }
 </script>
 
 <template>
     <header>
-        <a href="/" class="brand">
-            <img src="../assets/images/dc-logo.png" alt="">
-        </a>
+        <div class="container">
 
-        <nav>
+            <a href="/" class="brand">
+                <img src="../assets/images/dc-logo.png" alt="">
+            </a>
+    
+            <nav>
+    
+                <ul>
+                    <li v-for="(link, index) in links" :key="index" @click="toggleActive(index)">
+                        <a :class="{active: link.current}" :href="link.url">
+                            {{link.title}}
+                        </a>
+                    </li>
+                </ul>
+            
+            </nav>
 
-            <ul>
-                <li>
-                    <a href="#">
-                        Characters
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Comics
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Movies
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        TV
-                    </a>
-                </li>
-            </ul>
-        
-        </nav>
+        </div>
+
     </header>
 </template>
 
 <style lang="scss" scoped>
 
 header {
-    display: flex;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     width: 100%;
-    justify-content: space-between;
+    padding: 10px 0;
     
-    ul {
-        list-style-type: none;
-    
+    .container {
+        width: 80%;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        width:  40%;
 
-        a {
-            color: #515b68;
+        img {
+            width: 70%;
+        }
+
+        nav {
+            width: 60%;
+
+            ul {    
+                display: flex;
+                flex-direction: row;
+                width:  100%;
+                padding-top: 20px;
+        
+                a {
+                    color: #515b68;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-right: 1rem;
+                    padding: 45px 0;
+
+                    li {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .active {
+            color: #0282f9;
+            border-bottom: 4px solid #0282f9;
         }
     }
+
 }
 
 </style>

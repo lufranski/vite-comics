@@ -36,19 +36,22 @@
         width: 100%;
         background-image: url('../assets/images/footer-bg.jpg');
         background-repeat: no-repeat;
+        // DEBUG
+        height: 400px;
     }
 
     .container {
         display: flex;
+        // DEBUG
+        height: 100%;
     }
     .inner {
         background-image: url(../assets/images/dc-logo-bg.png);
-        background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         // DEBUG
         width: 50%;
-        height: 500px;
+        height: 100%;
     }
 
     .left {

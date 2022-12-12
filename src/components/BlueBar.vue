@@ -46,8 +46,6 @@
         ul {
             display: flex;
             flex-direction: row;
-
-            list-style-type: none;
         }
     }
 </style>

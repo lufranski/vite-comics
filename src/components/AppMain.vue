@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="container centeredcont">
         Content goes here 
     </div>
 </template>
@@ -15,7 +15,6 @@
         background-color: #1c1c1c;
         padding: 50px;
         width: 100%;
-        text-align: center;
         color: #fff;
     }
 
