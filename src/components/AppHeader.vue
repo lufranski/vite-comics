@@ -96,7 +96,7 @@
 
 header {
     width: 100%;
-    padding: 10px 0;
+    // padding: 5px 0;
     
     .container {
         width: 80%;
@@ -104,7 +104,7 @@ header {
         justify-content: space-between;
 
         img {
-            width: 70%;
+            width: 60%;
         }
 
         nav {
@@ -121,11 +121,9 @@ header {
                     font-size: 12px;
                     font-weight: bold;
                     margin-right: 1rem;
-                    padding: 45px 0;
+                    padding: 25px 0;
 
-                    li {
-                        height: 100px;
-                    }
+                    
                 }
             }
         }

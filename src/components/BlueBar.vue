@@ -58,7 +58,7 @@
 <style lang="scss" scoped>
     div {
         background-color: #0282f9;
-        padding: 50px;
+        padding: 30px;
 
         nav {
             width: 80%;
