@@ -43,9 +43,9 @@
 
 header {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     width: 100%;
     justify-content: space-between;
     
