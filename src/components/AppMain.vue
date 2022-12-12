@@ -5,16 +5,19 @@
 </script>
 
 <template>
-    <div class="container centeredcont">
-        Content goes here 
-    </div>
+    <main>
+
+        <div class="container">
+            Content goes here 
+        </div>
+        
+    </main>
 </template>
 
 <style lang="scss" scoped>
     .container {
         background-color: #1c1c1c;
         padding: 50px;
-        width: 100%;
         color: #fff;
     }
 

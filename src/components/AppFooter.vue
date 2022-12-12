@@ -33,7 +33,6 @@
 
 <style lang="scss" scoped>
     footer {
-        width: 100%;
         background-image: url('../assets/images/footer-bg.jpg');
         background-repeat: no-repeat;
         // DEBUG
