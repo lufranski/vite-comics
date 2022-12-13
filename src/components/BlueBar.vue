@@ -56,8 +56,10 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
     div {
-        background-color: #0282f9;
+        background-color: $primary;
         padding: 30px;
 
         nav {

@@ -110,6 +110,9 @@
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
+
+    
     footer {
         width: 100%;
         background-image: url('../assets/images/footer-bg.jpg');
@@ -160,7 +163,7 @@
                 padding: 20px 0;
 
                 .button {
-                    border: 1px solid #0282f9;
+                    border: 1px solid $primary;
                     width: 15%;
                     padding: 10px;
     
@@ -175,7 +178,7 @@
                     justify-content: flex-end;
     
                     h3 {
-                        color: #0282f9;
+                        color: $primary;
                         margin-right: 20px;
                     }
     

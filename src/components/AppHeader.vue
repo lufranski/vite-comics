@@ -93,6 +93,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 
 header {
     width: 100%;
@@ -124,15 +126,15 @@ header {
                     padding: 25px 10px;
 
                     &:hover {
-                        color: #0282f9;
-                        border-bottom: 4px solid #0282f9;            
+                        color: $primary;
+                        border-bottom: 4px solid $primary;            
                     }    
                 }
             }
         }
         .active {
-            color: #0282f9;
-            border-bottom: 4px solid #0282f9;
+            color: $primary;
+            border-bottom: 4px solid $primary;
         }
     }
 
