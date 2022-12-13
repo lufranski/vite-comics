@@ -89,6 +89,10 @@ import ComicCard from './ComicCard.vue';
 <template>
     <main>
 
+        <div class="jumbo">
+            <img src="../assets/images/jumbotron.jpg" alt="">
+        </div>
+
         <div class="container comiclist">
             <ComicCard v-for="(comic, index) in comics" :key="index" :item="comic"/>
         </div>
@@ -107,6 +111,17 @@ import ComicCard from './ComicCard.vue';
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    .jumbo {
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+        }
     }
 
 </style>
