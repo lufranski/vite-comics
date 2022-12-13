@@ -1,5 +1,10 @@
 <script>
+import ComicCard from './ComicCard.vue';
+
     export default{
+        components: {
+            ComicCard
+        },
         data(){
             return {
                 comics: [
@@ -84,8 +89,8 @@
 <template>
     <main>
 
-        <div class="container">
-            Content goes here 
+        <div class="container comiclist">
+            <ComicCard v-for="(comic, index) in comics" :key="index" :item="comic"/>
         </div>
         
     </main>
@@ -96,6 +101,12 @@
         background-color: #1c1c1c;
         padding: 50px;
         color: #fff;
+    }
+
+    .comiclist {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
 </style>
