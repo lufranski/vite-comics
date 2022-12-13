@@ -73,7 +73,6 @@
             justify-content: space-around;
 
             li {
-               width: 40%;                                                
                 
                 a {
                     color: #fff;
