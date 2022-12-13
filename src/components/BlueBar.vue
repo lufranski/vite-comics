@@ -41,17 +41,19 @@
 
 <template>
     <div>
-        <nav>
+        <div class="container">
             <ul>
                 <li v-for="(blue, index) in blueLinks" :key="index">
-                    <img :src="getImagePath(`../assets/images/${blue.img}`)" alt="">
                     
                     <a :href="blue.url">
-                        {{blue.title}}
+                        <img :src="getImagePath(`../assets/images/${blue.img}`)" alt="">
+                        <h4>
+                            {{blue.title}}
+                        </h4>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </div>
 </template>
 
@@ -62,30 +64,32 @@
         background-color: $primary;
         padding: 30px;
 
-        nav {
-            width: 80%;
-            height: 100%;
-            margin: 0 auto;
-            padding: 0 50px;
+        .container {
+            padding: 2rem 6rem;
         }
         ul {
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
 
             li {
-               margin-right: 35px;
-                height: 50px;
-                                
-                img {
-                    vertical-align: middle;
-                    margin-right: 10px;
-                    max-width: 40px;
-                    min-height: 50px;
-                }
-
+               width: 40%;                                                
+                
                 a {
                     color: #fff;
                     font-size: 12px;
+
+                    img {
+                        vertical-align: middle;
+                        width: 30px;
+                        height: 40px;
+                        margin-right: .4rem;
+                        object-fit: contain;
+                    }
+
+                    h4 {
+                        display: inline-block;
+                    }
                 }
             }        
         }

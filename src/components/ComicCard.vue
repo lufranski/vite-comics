@@ -8,9 +8,11 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="item.thumb" alt="item.type">
-
-        <h4>{{item.series}}</h4>
+        <a href="#">
+            <img :src="item.thumb" alt="item.type">
+    
+            <h4>{{item.series}}</h4>
+        </a>
     </div>
 </template>
 
@@ -19,8 +21,13 @@ export default {
     .card {
         width: calc((100% / 6) - 1rem);
 
-        h4 {
-            font-size: 8px;
+        a {
+            color: #fff;
+            
+            h4 {
+                font-size: 8px;
+            }
         }
     }
+    
 </style>

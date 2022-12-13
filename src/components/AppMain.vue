@@ -39,7 +39,7 @@ import ComicCard from './ComicCard.vue';
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/BM_56_300-001_HD_5ba137a85c3bf3.33122291.jpg?itok=3FHJQYJZ",
+                        "thumb": "https://www.dc.com/sites/default/files/styles/covers192x291/public/gn-covers/2018/05/bmbeyond_hushbeyond_5b071c80d72ce3.43932324.jpg?itok=5eXAz7Vv",
                         "price": "$2.99",
                         "series": "Batman Beyond",
                         "type": "comic book"
@@ -112,11 +112,17 @@ import ComicCard from './ComicCard.vue';
 
         .label {
             position: absolute;
-            top: 230px;
+            top: 280px;
             left: 190px;
             background-color: $primary;
             color: #fff;
             padding: .5rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #fff;
+                color: #1c1c1c;
+            }
         }
     }
 
@@ -133,11 +139,11 @@ import ComicCard from './ComicCard.vue';
     }
 
     .jumbo {
-        height: 250px;
+        height: 300px;
 
         img {
             width: 100%;
-            height: 250px;
+            height: 300px;
             object-fit: cover;
             object-position: top;
         }

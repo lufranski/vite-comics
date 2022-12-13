@@ -98,6 +98,9 @@
 
 header {
     width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 200;
     // padding: 5px 0;
     
     .container {

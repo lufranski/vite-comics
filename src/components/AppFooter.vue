@@ -139,11 +139,16 @@
 
                     .tit {
                         color: #fff;
+                        margin-top: .5rem;
                     }
 
                     a {
                         color: grey;
                         font-size: 10px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             
@@ -165,11 +170,18 @@
                 .button {
                     border: 1px solid $primary;
                     width: 15%;
-                    padding: 10px;
+                    padding: 1rem;
+                    text-align: center;
+                    cursor: pointer;
     
+                    &:hover {
+                        background-color: $primary;
+                    }
+
                     a {
                         color: #fff;
                     }
+
                 }
     
                 .social {
