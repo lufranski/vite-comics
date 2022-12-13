@@ -112,8 +112,8 @@ import ComicCard from './ComicCard.vue';
 
         .label {
             position: absolute;
-            top: 180px;
-            left: 50px;
+            top: 230px;
+            left: 190px;
             background-color: $primary;
             color: #fff;
             padding: .5rem;
@@ -133,11 +133,11 @@ import ComicCard from './ComicCard.vue';
     }
 
     .jumbo {
-        height: 200px;
+        height: 250px;
 
         img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             object-position: top;
         }
