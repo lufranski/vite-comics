@@ -92,6 +92,10 @@ import ComicCard from './ComicCard.vue';
         <div class="jumbo">
             <img src="../assets/images/jumbotron.jpg" alt="">
         </div>
+        
+        <div class="label">
+            CURRENT SERIES
+        </div>
 
         <div class="container comiclist">
             <ComicCard v-for="(comic, index) in comics" :key="index" :item="comic"/>
@@ -101,6 +105,21 @@ import ComicCard from './ComicCard.vue';
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
+
+    main {
+        position: relative;
+
+        .label {
+            position: absolute;
+            top: 180px;
+            left: 50px;
+            background-color: $primary;
+            color: #fff;
+            padding: .5rem;
+        }
+    }
+
     .container {
         background-color: #1c1c1c;
         padding: 50px;
