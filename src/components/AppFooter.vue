@@ -82,7 +82,25 @@
             </div>
         </div>
 
-        <div class="bottom"></div>
+        <div class="bottom">
+            <div class="button">
+                <a href="#">
+                    SIGN-UP NOW!
+                </a>
+            </div>
+
+            <div class="social">
+                <h3>FOLLOW US</h3>
+
+                <div class="icons">
+                    <img src="../assets/images/footer-facebook.png" alt="">
+                    <img src="../assets/images/footer-twitter.png" alt="">
+                    <img src="../assets/images/footer-youtube.png" alt="">
+                    <img src="../assets/images/footer-pinterest.png" alt="">
+                    <img src="../assets/images/footer-periscope.png" alt="">
+                </div>
+            </div>
+        </div>
 
     </footer>
 </template>
@@ -135,6 +153,39 @@
             background-color: #303030;
             height: 100px;
             z-index: 200;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .button {
+                border: 1px solid #0282f9;
+                width: 20%;
+                padding: 15px;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            .social {
+                width: 50%;
+                display: flex;
+
+                h3 {
+                    color: #0282f9;
+                    margin-right: 20px;
+                }
+
+                .icons {
+                    width: 60%;
+
+                    img {
+                        // vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+
+            }        
         }
     }
 
