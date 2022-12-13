@@ -83,23 +83,27 @@
         </div>
 
         <div class="bottom">
-            <div class="button">
-                <a href="#">
-                    SIGN-UP NOW!
-                </a>
-            </div>
+            <div class="container">
 
-            <div class="social">
-                <h3>FOLLOW US</h3>
-
-                <div class="icons">
-                    <img src="../assets/images/footer-facebook.png" alt="">
-                    <img src="../assets/images/footer-twitter.png" alt="">
-                    <img src="../assets/images/footer-youtube.png" alt="">
-                    <img src="../assets/images/footer-pinterest.png" alt="">
-                    <img src="../assets/images/footer-periscope.png" alt="">
+                <div class="button">
+                    <a href="#">
+                        SIGN-UP NOW!
+                    </a>
+                </div>
+    
+                <div class="social">
+                    <h3>FOLLOW US</h3>
+    
+                    <div class="icons">
+                        <img src="../assets/images/footer-facebook.png" alt="">
+                        <img src="../assets/images/footer-twitter.png" alt="">
+                        <img src="../assets/images/footer-youtube.png" alt="">
+                        <img src="../assets/images/footer-pinterest.png" alt="">
+                        <img src="../assets/images/footer-periscope.png" alt="">
+                    </div>
                 </div>
             </div>
+            
         </div>
 
     </footer>
@@ -111,22 +115,16 @@
         background-image: url('../assets/images/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        // DEBUG
-        // height: 400px;
-    
+        
         .container {
             display: flex;
-            // DEBUG
-            // height: 100%;
-    
+            
             .inner {
                 background-image: url('../assets/images/dc-logo-bg.png');
                 background-repeat: no-repeat;
                 background-position: right;
                 background-size: cover;
-                // DEBUG
                 width: 50%;
-                // height: 100%;
             }
             .left {
                 width: 50%;
@@ -153,35 +151,40 @@
             background-color: #303030;
             height: 100px;
             z-index: 200;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .button {
-                border: 1px solid #0282f9;
-                width: 20%;
-                padding: 15px;
-
-                a {
-                    color: #fff;
-                }
-            }
-
-            .social {
-                width: 50%;
+            
+            .container {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                padding: 20px 0;
 
-                h3 {
-                    color: #0282f9;
-                    margin-right: 20px;
+                .button {
+                    border: 1px solid #0282f9;
+                    width: 15%;
+                    padding: 10px;
+    
+                    a {
+                        color: #fff;
+                    }
                 }
-
-                .icons {
-                    width: 60%;
-
-                    img {
-                        // vertical-align: middle;
-                        margin-right: 10px;
+    
+                .social {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+    
+                    h3 {
+                        color: #0282f9;
+                        margin-right: 20px;
+                    }
+    
+                    .icons {
+                        width: 60%;
+    
+                        img {
+                            margin-right: 10px;
+                        }
                     }
                 }
 
